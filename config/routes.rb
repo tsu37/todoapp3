@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   resources :users do
     member do
-      get :following, :followers
+      #get :following, :followers
     end
   end
   resources :account_activations, only: [:edit]
